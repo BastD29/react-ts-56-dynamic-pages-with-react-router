@@ -1,0 +1,25 @@
+.sidebar {
+  width: 250px;
+  position: fixed;
+  left: -250px; // Start off-screen
+  top: 0;
+  bottom: 0;
+  background: #333;
+  color: white;
+  transition: left 0.3s ease;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  grid-gap: 16px;
+
+  &--open {
+    left: 0; // Slide in
+  }
+
+  &__button {
+    background: transparent;
+    color: white;
+  }
+}
